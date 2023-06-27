@@ -1,0 +1,86 @@
+html
+body {
+  color: rgb(81, 78, 78);
+    background-image: url("/images/stefan-gall-sF4RV2lDtW0-unsplash.jpg");
+    background-attachment:scroll;
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100%;
+    width:fit-content;
+text-shadow:  2px 2px rgb(5, 65, 90);}
+
+a:link,
+a:visited {
+  background-color:  rgba(5, 70, 100, 0.75);
+  color: rgb(220, 246, 255);
+  border: 2px solid  rgb(5, 70, 100);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+}
+
+a:hover,
+a:active {
+  background-color:  rgb(7, 100, 143);
+  color: rgb(220, 246, 255);}
+  .SPJII { grid-area: SPJII; background-color:  rgba(5, 70, 100, 0.75);text-align: center; vertical-align: middle;  display: grid;
+    color: rgb(220, 246, 255);
+  text-align: center;   align-items: center;
+  justify-content: center; font-size: xx-large; font-weight: bold;}
+  
+    
+        
+  .container * {
+    
+    position: relative;}
+  .Menu {  display: grid;
+    color: rgb(220, 246, 255);
+  text-align: center;
+  
+        content:attr(class);
+        
+        align-items: center;
+        justify-content: center;
+      /* top bar were you click */
+background-color: rgba(5, 70, 100, 0.75);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Resume Projects Contact-me"
+      "Resume Projects Contact-me"
+      "Resume Projects Contact-me";
+    grid-area: Menu;
+  font-weight: bold;}
+  
+  
+  .Resume { grid-area: Resume; text-align:center; }
+
+  .Projects { grid-area: Projects; }
+  
+  .Contact-me { grid-area: Contact-me; text-align: left;
+  }
+  .Languages- {  display: grid; background-color: rgba(0, 78, 112, 0.85); display: grid;
+    color: rgb(255, 255, 255); height: 50px;
+  
+  
+  
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . .";
+    grid-area: Languages-;
+  }
+  /* Bottom of the page */
+  .Footer { grid-area: Footer;background-color:rgb(5, 65, 90); }
+  html, body , .container {
+    height: 100%;
+    margin: 0;
+  }

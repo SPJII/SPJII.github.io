@@ -1,0 +1,187 @@
+html
+body 
+.container {  display: grid;
+    grid-template-columns: 0.6fr 1.4fr 0.5fr;
+    grid-template-rows: 0.5fr 0.8fr 0.6fr 2.8fr 0.3fr 0.2fr;
+    gap: 2px 2px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "SPJII Menu Menu"
+      "Photo . ."
+      "Photo Greetings News"
+      "Skills Bio News"
+      "Skills Languages- News"
+      "Footer Footer Footer";
+      text-align: center;}
+      .Photo {  display: grid;
+        grid-template-columns: .2fr 2.5fr .2fr;
+        grid-template-rows: .2fr 2.4fr 0.2fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". . ."
+          ". Photo1 ."
+          ". . .";
+        grid-area: Photo;
+      background-color: rgb(10, 100, 140);}
+      
+      .Photo1 { grid-area: Photo1;  background-image: url("/images/work\ photo.jpeg");background-position: center; background-size:cover; height: 100%; border-radius: 20%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  content: "";
+        clear: both;}
+
+      .Skills {  display: grid; background-color: rgba(10, 101, 140, 0.8);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "Skills-1 Skills-1 Skills-1"
+          "Skills-1 Skills-1 Skills-1"
+          "Html Html Html"
+          "Html Html Html"
+          "Css Css Css"
+          "Css Css Css"
+          "JavaScript- JavaScript- JavaScript-"
+          "JavaScript- JavaScript- JavaScript-"
+          "React React React"
+          "React React React"
+          "SQL SQL SQL"
+          "SQL SQL SQL"
+          "Python- Python- Python-"
+          "Python- Python- Python-"
+          "Design Design Design"
+          "Design Design Design";
+          grid-area: Skills;text-align: center; vertical-align: middle;  display: grid;
+          color: rgb(202, 255, 254);
+        text-align: center;   align-items: center;
+        justify-content: center; }
+        
+
+      .Skills-1 { grid-area: Skills-1; font-size: x-large; font-weight: bolder; }
+      
+      .Html { grid-area: Html; }
+      
+      .Css { grid-area: Css; }
+      
+      .JavaScript- { grid-area: JavaScript-; }
+      
+      .React { grid-area: React; }
+      
+      .SQL { grid-area: SQL; }
+      
+      .Python- { grid-area: Python-; }
+      
+      .Design { grid-area: Design; }
+      /* Current projects */
+      .News {  display: grid; background-color: rgba(10, 101, 140, 0.7); color: aliceblue;text-shadow:2px 2px darkblue;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "News-1 News-1 News-1"
+          "News-2 News-2 News-2"
+          "News-3 News-3 News-3";
+        grid-area: News;
+      }
+      
+      .News-1 {  display: grid;background-image: url("/images/farzad-nazifi-p-xSl33Wxyc-unsplash.jpg");background-position: center; background-size: cover;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.7fr 1.3fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "Title-1 Title-1 Title-1"
+          ". . ."
+          ". . .";
+        grid-area: News-1;
+      }
+      
+      .Title-1 { grid-area: Title-1; }
+      
+      .News-2 {  display: grid; background-image: url("/images/daniel-korpai-pKRNxEguRgM-unsplash.jpg");background-position: center; background-size: cover;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "Title-2 Title-2 Title-2"
+          ". . ."
+          ". . .";
+        grid-area: News-2;
+      }
+      
+      .Title-2 { grid-area: Title-2; }
+      
+      .News-3 {  display: grid;background-image: url("/images/maik-jonietz-_yMciiStJyY-unsplash.jpg");background-position: center; background-size: cover;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "Tittle-3 Tittle-3 Tittle-3"
+          ". . ."
+          ". . .";
+        grid-area: News-3;
+      }
+      
+      
+      
+   
+      .Tittle-3 { grid-area: Tittle-3; }
+      /* choose a language to view in */
+      .Languages- {  display: grid; background-color: rgba(0, 78, 112, 0.85); display: grid;
+        color: rgb(255, 255, 255); height: 50px;
+      
+      
+      
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". . ."
+          ". . ."
+          ". . .";
+        grid-area: Languages-;}
+      
+      .Bio {  display: grid; height:440px;  display: grid;
+        grid-template-columns: 0.2fr 2.6fr 0.2fr;
+        grid-template-rows: 0.3fr 2.5fr 0.2fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". . ."
+          ". Summary- ."
+          ". . .";
+        grid-area: Bio;
+       
+        grid-area: Bio;  display: grid;
+        color: rgb(203, 252, 255);
+        background-color:rgba(5, 70, 100, 0.75);
+       font-size:medium;text-align:justify; vertical-align:super;  display: grid;  align-items:flex-start;
+     justify-content:flex-start; font-size:x-large; content: "";
+     clear: both;
+      }
+      .Summary- { grid-area: Summary-; }
+  
+    
+     /* My Greeting */
+            .Greetings {  display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 0px 0px;
+                grid-auto-flow: row;
+                grid-template-areas:
+                  ". . ."
+                  "Hi Hi Hi"
+                  "welcome welcome welcome";
+                grid-area: Greetings;
+                color: rgb(222, 247, 255);
+                font-size: xx-large; 
+                justify-content: center; font-weight: bold;}
+              
+              .welcome { grid-area: welcome; }
+              
+              .Hi { grid-area: Hi; }
+              

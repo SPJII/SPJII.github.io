@@ -1,0 +1,99 @@
+
+  html
+  body
+  
+  .container {  display: grid;
+    grid-template-columns: 0.5fr 1.8fr 0.2fr;
+    grid-template-rows: 0.5fr 1.1fr 3.1fr 0.3fr 0.2fr;
+    gap: 2px 2px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "SPJII Menu Menu"
+      "Photo Top ."
+      "Project-summary- Bio ."
+      ". Languages- ."
+      "Footer Footer Footer";text-align: center;
+  }
+  .Photo {  display: grid;
+    grid-template-columns: 0.2fr 2.6fr 0.2fr;
+    grid-template-rows: 0.2fr 2.6fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". Photo1 ."
+      ". . .";
+    grid-area: Photo;
+    background-color: rgb(10, 100, 140);}
+  
+  .Photo1 { grid-area: Photo1;  background-image: url("/images/work\ photo.jpeg");background-position: center; background-size:cover; height: 100%; border-radius: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  content: "";
+    clear: both;}
+  
+  
+  .Bio {  display: grid; height:440px;  display: grid;
+    grid-template-columns: 0.2fr 2.6fr 0.2fr;
+    grid-template-rows: 0.3fr 2.5fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". Summary- ."
+      ". . .";
+    grid-area: Bio;
+   
+    grid-area: Bio;  display: grid;
+    color: rgb(203, 252, 255);
+    background-color:rgba(5, 70, 100, 0.75);
+   font-size:medium;text-align:justify; vertical-align:super;  display: grid;  align-items:flex-start;
+ justify-content:flex-start; font-size:x-large; content: "";
+ clear: both;
+  }
+ 
+  
+  .Summary- { grid-area: Summary-; }
+  
+  .Top {  display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 0.6fr 1.8fr 0.6fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". Heading- ."
+      ". . .";
+    grid-area: Top;
+  }
+  
+  .Heading- { grid-area: Heading-; }
+  
+  .Project-summary- {  display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 0.4fr 2fr 0.3fr 2.1fr 0.3fr 2fr 0.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". Projects-1 ."
+      ". . ."
+      ". Projects-2 ."
+      ". . ."
+      ". Projects-3 ."
+      ". . .";
+    grid-area: Project-summary-;text-align: center; vertical-align: middle;  display: grid;
+    color: rgb(202, 255, 254);
+  text-align: center;   align-items: center;
+  justify-content: center;background-color: rgb(10, 100, 140);
+  }
+  
+  .Projects-1 { grid-area: Projects-1; }
+  
+  .Projects-2 { grid-area: Projects-2; }
+  
+  .Projects-3 { grid-area: Projects-3; }
+  
+  
+  html, body , .container {
+    height: 100%;
+    margin: 0;
+  }

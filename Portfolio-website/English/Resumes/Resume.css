@@ -1,0 +1,88 @@
+
+  html
+  body
+  
+  .container {  display: grid;
+    grid-template-columns: 0.5fr 1.8fr 0.2fr;
+    grid-template-rows: 0.5fr 1.1fr 3.1fr 0.3fr 0.2fr;
+    gap: 2px 2px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "SPJII Menu Menu"
+      "Frame Frame Frame"
+      "Frame Frame Frame"
+      ". Languages- ."
+      "Footer Footer Footer";
+  }
+  
+  .SPJII { grid-area: SPJII; }
+  
+  .Menu {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Home Projects Contact-me"
+      "Home Projects Contact-me"
+      "Home Projects Contact-me";
+    grid-area: Menu;  background-attachment:scroll;
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100%;
+    width:fit-content;
+  }
+  
+  .Home { grid-area: Home; }
+  
+  .Projects { grid-area: Projects; }
+  
+  .Contact-me { grid-area: Contact-me; }
+  
+  .Languages- {  display: grid; background-color: rgba(0, 78, 112, 0.85); display: grid;
+    color: rgb(255, 255, 255); height: 50px;
+  
+  
+  
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . .";
+    grid-area: Languages-;
+  }
+  /* Bottom of the page */
+  .Footer { grid-area: Footer;background-color:rgb(5, 65, 90); }
+  html, body , .container {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .Footer { grid-area: Footer; }
+  
+  .Frame {  display: grid;
+    grid-template-columns: 1.8fr 6.5fr 0.7fr;
+    grid-template-rows: 1fr 11fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". Resume ."
+      ". Resume ."
+      ". Resume .";
+    grid-area: Frame;
+    background-attachment:scroll;
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100%;
+    width:fit-content;}
+  
+  .Resume { grid-area: Resume; }
+  
+  
+  html, body , .container {
+    height: 100%;
+    margin: 0;
+  }
